@@ -6,7 +6,7 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 19:06:55 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 21:37:23 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,15 @@ void	ft_print_comb(void)
 	int i;
 	int j;
 	int k;
-	
-	i = 0;
 
-	while (i < 8)
+	i = -1;
+	while (i++ < 8)
 	{
-		j = 1 + i;
-		while (j < 9)
+		j = i;
+		while (j++ < 9)
 		{
-			k = 1 + j;
-			while (k < 10)
+			k = j;
+			while (++k < 10)
 			{
 				ft_putchar(('0' + i));
 				ft_putchar(('0' + j));
@@ -43,11 +42,8 @@ void	ft_print_comb(void)
 					ft_putchar((','));
 					ft_putchar((' '));
 				}
-				k = k + 1;
 			}
-			j = j + 1;
 		}
-		i = i + 1;
 	}
 	ft_putchar(('\n'));
 }
