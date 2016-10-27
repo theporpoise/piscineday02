@@ -6,20 +6,20 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 17:33:21 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 17:47:15 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	int i;
 
 	i = 0;
-	while (('a' + i) <= 'z')
+	while (('z' - i) >= 'a')
 	{
-		ft_putchar(('a' + i));
+		ft_putchar(('z' - i));
 		i = i + 1;
 	}
 }

@@ -6,20 +6,21 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 17:33:21 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 17:57:21 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+int		ft_is_negative(int n)
 {
-	int i;
-
-	i = 0;
-	while (('a' + i) <= 'z')
+	if (n >= 0)
 	{
-		ft_putchar(('a' + i));
-		i = i + 1;
+		ft_putchar('P');
 	}
+	else
+	{
+		ft_putchar('N');
+	}
+	return (0);
 }

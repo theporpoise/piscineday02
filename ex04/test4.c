@@ -6,20 +6,33 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 17:33:21 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 17:01:29 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
 
-void	ft_print_alphabet(void)
+int	ft_putchar(char c)
 {
-	int i;
+	write(1, &c, 1);
+	return (0);
+}
 
-	i = 0;
-	while (('a' + i) <= 'z')
+int	ft_is_negative(int n)
+{
+	if (n >= 0)
 	{
-		ft_putchar(('a' + i));
-		i = i + 1;
+		ft_putchar('P');
 	}
+	else
+	{
+		ft_putchar('N');
+	}
+	return (0);
+}
+
+int	main(void)
+{
+	ft_is_negative(29);
+	return (0);
 }

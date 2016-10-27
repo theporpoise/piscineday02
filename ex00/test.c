@@ -6,11 +6,16 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 17:33:21 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 17:28:59 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print_alphabet(void)
 {
@@ -22,4 +27,10 @@ void	ft_print_alphabet(void)
 		ft_putchar(('a' + i));
 		i = i + 1;
 	}
+}
+
+int	main(void)
+{
+	ft_print_alphabet();
+	return (0);
 }
