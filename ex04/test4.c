@@ -6,33 +6,54 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/26 15:01:44 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/26 17:01:29 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/26 19:06:55 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_putchar(char c)
+void ft_print_comb(void);
+
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
-	return (0);
 }
 
-int	ft_is_negative(int n)
+void	ft_print_comb(void)
 {
-	if (n >= 0)
+	int i;
+	int j;
+	int k;
+	
+	i = 0;
+
+	while (i < 8)
 	{
-		ft_putchar('P');
+		j = 1 + i;
+		while (j < 9)
+		{
+			k = 1 + j;
+			while (k < 10)
+			{
+				ft_putchar(('0' + i));
+				ft_putchar(('0' + j));
+				ft_putchar(('0' + k));
+				if ((i + j) < 15)
+				{
+					ft_putchar((','));
+					ft_putchar((' '));
+				}
+				k = k + 1;
+			}
+			j = j + 1;
+		}
+		i = i + 1;
 	}
-	else
-	{
-		ft_putchar('N');
-	}
-	return (0);
+	ft_putchar(('\n'));
 }
 
 int	main(void)
 {
-	ft_is_negative(29);
+	ft_print_comb();
 	return (0);
 }
