@@ -1,23 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test5.c                                            :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/26 23:01:06 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/27 15:17:18 by mgould           ###   ########.fr       */
+/*   Created: 2016/10/27 15:21:54 by mgould            #+#    #+#             */
+/*   Updated: 2016/10/27 15:22:17 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void ft_print_comb(void);
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 void	out_char(int i, int j, int k, int l)
 {
@@ -67,10 +58,4 @@ void	ft_print_comb2(void)
 	k = -1;
 	l = 0;
 	loop_count(i, j, k, l);
-}
-
-int	main(void)
-{
-	ft_print_comb2();
-	return (0);
 }
