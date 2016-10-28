@@ -6,9 +6,11 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/27 15:35:19 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/27 15:35:25 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/27 19:52:43 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_putchar(char c);
 
 void	ft_print_reverse_alphabet(void)
 {

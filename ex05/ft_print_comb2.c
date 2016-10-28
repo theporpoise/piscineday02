@@ -6,9 +6,11 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/27 15:21:54 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/27 15:22:17 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/27 19:55:40 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_putchar(char c);
 
 void	out_char(int i, int j, int k, int l)
 {

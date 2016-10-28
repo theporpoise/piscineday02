@@ -6,11 +6,13 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/27 15:27:09 by mgould            #+#    #+#             */
-/*   Updated: 2016/10/27 15:27:28 by mgould           ###   ########.fr       */
+/*   Updated: 2016/10/27 19:54:04 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_is_negative(int n)
+int		ft_putchar(char c);
+
+void	ft_is_negative(int n)
 {
 	if (n >= 0)
 	{
@@ -20,5 +22,4 @@ int		ft_is_negative(int n)
 	{
 		ft_putchar('N');
 	}
-	return (0);
 }
